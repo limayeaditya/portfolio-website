@@ -11,3 +11,5 @@ tabsContainer.addEventListener("click", (e) =>{
         aboutSection.querySelector(target).classList.add("active")
     }
 })
+
+/* Header */

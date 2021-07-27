@@ -75,7 +75,7 @@ section{
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
     margin-bottom: 50px;
-    scroll-behavior: smooth;
+    
 }
 
 .main{
@@ -97,7 +97,7 @@ section{
     display: none !important
 }
 .sec-padding{
-    padding: 80px 0;
+    padding: 40px 0;
 }
 /* Background circles */
 @keyframes zoomInOut {
@@ -134,13 +134,13 @@ section{
     border-radius: 50%;
 }
 .bg-circles .circle1{
-    height: 60px;
-    width: 60px;
+    height: 85px;
+    width: 85px;
     background-color: var(--blue);
     left: 5%;
     right: 10%;
     opacity: 0.3;
-    animation: zoomInOut 6s linear infinite;
+    animation: zoomInOut 10s linear infinite;
 }
 .bg-circles .circle2{
     height: 80px;
@@ -149,25 +149,34 @@ section{
     left: 35%;
     top: 50%;
     opacity: 0.4;
-    animation: bounce 6s linear infinite;
+    animation: bounce 5s linear infinite;
 }
 .bg-circles .circle3{
     height: 60px;
     width: 60px;
-    background-color: var(--white);
+    background-color: var(--orange);
     top: 45%;
-    right: -6px;
+    right: -15px;
     opacity: 0.3;
-    animation: zoomInOut 6s linear infinite;
+    animation: zoomInOut 8s linear infinite;
 }
 .bg-circles .circle4{
-    height: 50px;
-    width: 50px;
-    background-color: var(--orange);
+    height: 80px;
+    width: 80px;
+    background-color: var(--white);
     left: -30px;
     top: 80%;
     opacity: 0.3;
-    animation: zoomInOut 6s linear infinite;
+    animation: bounce 9s linear infinite;
+}
+.bg-circles .circle4{
+    height: 80px;
+    width: 80px;
+    background-color: var(--blue-dark);
+    left: -3px;
+    top: 80%;
+    opacity: 0.3;
+    animation: bounce 9s linear infinite;
 }
 
 
@@ -236,10 +245,12 @@ button{
 .btn:hover{
     color: var(--white)
 }
+
 /* Home section*/
 .home-section{
     display: flex;
     padding: 120px 0;
+
 }
 .home-img,
 .home-text{
@@ -437,7 +448,8 @@ button{
 }
 .contact-info-item{
     margin-top: 10px;
-    margin-left: 40px;
+    left: 0;
+    align-content: flex-start;
     
 }
 .contact-info-item .social-links a{
@@ -455,4 +467,55 @@ button{
 .contact-info-item .social-links a:hover{
     color: var(--white);
     background-color: var(--main-color);
+}
+
+/* Responsive */
+
+@media (max-width:991px) {
+    .container{
+        padding: 0;
+    }
+    .home-text,
+    .home-img{
+        width: 100%;
+    }
+    .home-text{
+        text-align: center ;
+    }
+    .home-img{
+        order: -1;
+    }
+    .home-img .img-box{
+        max-width: 300px;
+    }
+    .home-text .btn{
+        margin: 0 7px 15px;
+    }
+    .portfolio-item{
+        width: calc(50% - 30px) ;
+    }
+}
+@media (max-width:767px) {
+    .about-img
+    ,.about-text{
+        width: 100%;
+    }
+    .about-text{
+        margin-top: 30px;
+    }
+    .portfolio-item{
+        width: calc(100% - 30px) ;
+        
+    }
+}
+@media (max-width:575px) {
+    .section-title{
+        font-size: 35px;
+    }
+    .home-text h1{
+        font-size: 30px;
+    }
+    .home-text h2{
+        font-size: 18px;
+    }
 }
