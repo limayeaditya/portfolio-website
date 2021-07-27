@@ -105,7 +105,7 @@ section{
         transform: scale(0.5);
     }
     50%{
-        transform: scale(1);
+        transform: scale(1.3);
     }
     
 }
@@ -147,7 +147,7 @@ section{
     width: 80px;
     background-color: var(--main-color);
     left: 35%;
-    top: 50%;
+    top: 30%;
     opacity: 0.4;
     animation: bounce 5s linear infinite;
 }
@@ -155,25 +155,34 @@ section{
     height: 60px;
     width: 60px;
     background-color: var(--orange);
-    top: 45%;
-    right: -15px;
+    top: 4%;
+    right: -1px;
     opacity: 0.3;
     animation: zoomInOut 8s linear infinite;
 }
 .bg-circles .circle4{
     height: 80px;
     width: 80px;
-    background-color: var(--white);
-    left: -30px;
+    background-color:#cddc39;
+    left: 430px;
     top: 80%;
     opacity: 0.3;
     animation: bounce 9s linear infinite;
 }
-.bg-circles .circle4{
+.bg-circles .circle5{
     height: 80px;
     width: 80px;
     background-color: var(--blue-dark);
     left: -3px;
+    top: 80%;
+    opacity: 0.3;
+    animation: bounce 9s linear infinite;
+}
+.bg-circles .circle6{
+    height: 80px;
+    width: 80px;
+    background-color: var(--blue);
+    right: -3px;
     top: 80%;
     opacity: 0.3;
     animation: bounce 9s linear infinite;
@@ -436,6 +445,7 @@ button{
 .portfolio-item-thumbnail img{
     width: 100%;
     border-radius: 10px;
+    
     
 }
 .portfolio-item h3{
