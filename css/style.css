@@ -314,9 +314,15 @@ button{
     border: 1px solid var(--white-alpha-40);
     margin: auto;
     border-radius: 10px;
+    
 }
 .about-img .img-box img{
     width: 100%;
+    padding:15px;
+    
+}
+.img-prop{
+    border-radius: 7%;
 }
 .about-text h3{
     text-transform: capitalize;
@@ -461,8 +467,7 @@ button{
     padding-top: 15px;
 }
 .contact-info-item{
-    margin-top: 10px;
-    left: 0;
+    margin: 15px;
     align-content: flex-start;
     
 }
