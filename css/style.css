@@ -76,6 +76,7 @@ section{
     backdrop-filter: var(--backdrop-filter-blur);
     margin-bottom: 50px;
     
+    
 }
 
 .main{
@@ -262,8 +263,8 @@ button{
 /* Home section*/
 .home-section{
     display: flex;
-    padding: 120px 0;
-
+    padding: 100px 0;
+    
 }
 .home-img,
 .home-text{
@@ -300,6 +301,7 @@ button{
     
 }
 /* About Section */
+
 .about-img{
     width: 40%;
     padding: 0 15px;
