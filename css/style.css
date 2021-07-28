@@ -219,6 +219,10 @@ button{
     font-family: inherit;
     user-select: none;
 }
+.link-btn{
+    cursor: pointer;
+    user-select: none;
+}
 .btn{
     line-height: 1.5;
     background-color: var(--white-alpha-25);
