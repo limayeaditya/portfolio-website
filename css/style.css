@@ -264,8 +264,9 @@ button{
 .home-section{
     display: flex;
     padding: 100px 0;
-    
+    margin-top: -5px;
 }
+
 .home-img,
 .home-text{
     padding: 15px;
